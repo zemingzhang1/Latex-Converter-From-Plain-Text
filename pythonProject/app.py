@@ -112,4 +112,4 @@ class APP:
 
 if __name__ == '__main__':
     app = APP()
-    pywebio.start_server(app.START(), port=51)
+    pywebio.start_server(app.START, port=51)
