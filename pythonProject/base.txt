@@ -1,0 +1,147 @@
+~Firewall Rules
+~~Affected interface
+
+We then modify the previous homeworks' firewall rules to allow Ping, HTTP, HTTPS, and DNS for ServerNet from WAN not LAN, rules are shown in figure 1.
+
+@@firewall rules to allow one device
+
+We then access pfsense through the ServerGUI as we assign that to be the only device to connect to pfsense. We will find the protocol and ports used by HTTP(s), Ping and DNS to implement rules that allow only the ServerNet interface to do Ping etc. The rules are shown in figure 2.
+
+@@firewall rules to allow Ping, HTTP, HTTPS, and DNS
+
+~Linux Server Setup
+
+~~Initial installation details
+
+After finding the iso in drive 1, ISO directory, Linux subdirectory with information we power on the system and began setup.
+
+@@Ubantu Server lang Options
+
+The figure below are keyboard language options. Just stick with english.
+
+@@Ubantu Server keyboard lang Options
+
+This is the network setup, just go with default.
+
+@@Ubantu Server network Options
+
+This is the storage setup, just go with default and click done.
+
+@@Ubantu Server storage config
+
+We are going to set up our profile with “Server name: web28. Your name: sysadmin; username: sysadmin; password: Change.me!” we will come to an interface for language options.
+
+@@Ubantu Server profile setup
+
+Good, now we can reboot it.
+
+~Firewall Rules
+~~Affected interface
+
+We then modify the previous homeworks' firewall rules to allow Ping, HTTP, HTTPS, and DNS for ServerNet from WAN not LAN, rules are shown in figure 1.
+
+@@firewall rules to allow one device
+
+We then access pfsense through the ServerGUI as we assign that to be the only device to connect to pfsense. We will find the protocol and ports used by HTTP(s), Ping and DNS to implement rules that allow only the ServerNet interface to do Ping etc. The rules are shown in figure 2.
+
+@@firewall rules to allow Ping, HTTP, HTTPS, and DNS
+
+~Linux Server Setup
+
+~~Initial installation details
+
+After finding the iso in drive 1, ISO directory, Linux subdirectory with information we power on the system and began setup.
+
+@@Ubantu Server lang Options
+
+The figure below are keyboard language options. Just stick with english.
+
+@@Ubantu Server keyboard lang Options
+
+This is the network setup, just go with default.
+
+@@Ubantu Server network Options
+
+This is the storage setup, just go with default and click done.
+
+@@Ubantu Server storage config
+
+We are going to set up our profile with “Server name: web28. Your name: sysadmin; username: sysadmin; password: Change.me!” we will come to an interface for language options.
+
+@@Ubantu Server profile setup
+
+Good, now we can reboot it.
+
+@@Ubantu Server installation complete
+
+Relogin with the credential that was just set.
+
+@@Ubantu Server reboot and login
+
+~~Test/verify network connectivity
+
+We will run the ip a command after changing the IP and DNS.
+
+@@Ubantu Server ip a cmd
+
+~~OS and virtualization support software installation
+
+We now use apt - sudo apt update and upgrade to update our OS.
+
+@@Ubantu server update
+
+~~Install additional software packages
+
+~Install and Configure the RockyDBServer VM
+
+~~Install/Config the RockyDBServer VM
+
+After finding the iso in drive 1, ISO directory, Linux subdirectory with information we power on the system and began setup.
+
+@@Ubantu Server lang Options
+
+This is the Rocky installation summary interface, just go setup root and install destination.
+
+@@Rocky installation summary interface.
+
+We will set the root password to “Change.me!”.
+
+@@Rocky root password
+
+We will then configure our storage disk destination of the file from installation.
+
+@@Rocky installment destination
+
+We are going to set up our profile with “Full name: sysadmin; username: sysadmin; password: Change.me!”.
+
+@@Rocky user creation
+
+After we setup eventing and our credentials click done.
+
+@@Rocky user credentials
+
+Relogin with the credential that was just set.
+
+@@Rocky installment done
+
+Re Login now to test out if it worked.
+@@Rocky terminal
+
+
+~~Test/verify network connectivity
+
+@@Rocky change IP
+
+@@Rocky change IP ens160
+
+~~OS and virtualization support software installation
+~~Install additional software packages
+
+~User and Group Creation
+~~On UbuntuClient user and group creation
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+~Linux Hardening
+~~Linux hardening techniques into practice
+
+~Update Topology
