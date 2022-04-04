@@ -50,5 +50,5 @@ def reName():
     return image_list
 
 
-if __name__ == '__main__':
-    reName()
+# if __name__ == '__main__':
+#     reName()

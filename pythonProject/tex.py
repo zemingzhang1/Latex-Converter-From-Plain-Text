@@ -1,7 +1,3 @@
-import os
-import subprocess
-import read
-
 beganDoc = "\\begin{document}\n"
 endDoc = "\\end{document}\n"
 newLine = "\n"

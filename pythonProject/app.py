@@ -1,4 +1,3 @@
-# A simple script to calculate BMI
 from functools import partial
 import makeTex as mt
 import pywebio
