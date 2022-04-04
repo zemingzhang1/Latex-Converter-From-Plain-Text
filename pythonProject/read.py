@@ -2,6 +2,7 @@ data = {}
 currentSection = ""
 currentSubsection = ""
 
+
 def parse(file):
     for i in file.split("\n"):
         print(i)

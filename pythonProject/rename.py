@@ -50,9 +50,5 @@ def reName():
     return image_list
 
 
-# def den():
-#     pathF = p()
-#     for i in range(1, 6):
-#         os.rename("figure" + str(i) + ".png", str(pathF) + "/figure" + str(i) + ".png")
 if __name__ == '__main__':
     reName()

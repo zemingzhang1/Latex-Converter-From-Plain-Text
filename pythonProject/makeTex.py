@@ -1,12 +1,10 @@
 import read as r
-from rename import *
 from tex import *
+
 
 def make(f):
     data = r.parse(f)
-    print(data)
-    retFile = None
-    with open("outTexFile.tex", "w") as file:
+    with open("latex/outTexFile.tex", "w") as file:
         addHead(file)
         newCMD(file)
         BEGAN_DOC(file)
@@ -25,7 +23,7 @@ def make(f):
                         string = ""
                         printStr = False
                         nl(file)
-                        addPic(file, 0.5, 2, "Screenshot of " + i[2:], "figure" + str(figure) + ".png")
+                        addPic(file, 0.75, 2, "Screenshot of " + i[2:], "figure" + str(figure) + ".png")
                         figure += 1
                     else:
                         string += i
@@ -35,22 +33,4 @@ def make(f):
                     nl(file)
 
         END_DOC(file)
-        retFile = file
-        # dirInit()
-    return retFile
-
-    # with open("outTexFile.tex", "w") as file:
-    #     addHead(file)
-    #     newCMD(file)
-    #     BEGAN_DOC(file)
-    #     addPgStyle(file)
-    #     tof(file)
-    #
-    #     for i in range(0,4):
-    #         addSection(file, "secA"+ str(i), "secA"+ str(i))
-    #         addSubSection(file, "subA" + str(i), "subB" + str(i))
-    #         addText(file, tt, 1)
-    #         nl(file)
-    #         addPic(file, 0.5, 2, "text pic" + str(i), "download.png")
-    #
-    #     END_DOC(file)
+    return file
